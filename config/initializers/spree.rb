@@ -5,12 +5,13 @@
 #
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
+
 Spree.config do |config|
   # config.override_actionmailer_config = false
-  # config.mails_from = "emma@sincuru.com"
-  # Example:
-  # Uncomment to stop tracking inventory levels in the application
-  # config.track_inventory_levels = false
+  config.mails_from = 'Your Company <mail@yourcompany.com>'
+  # Set domain for emails
+  ActionMailer::Base.default_url_options[:host] = config.site_url
 end
+
 
 Spree.user_class = "Spree::LegacyUser"
