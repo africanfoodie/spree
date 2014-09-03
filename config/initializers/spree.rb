@@ -8,10 +8,17 @@
 
 Spree.config do |config|
   # config.override_actionmailer_config = false
-  config.mails_from = 'Your Company <mail@yourcompany.com>'
+  config.override_actionmailer_config = true
+  config.mails_from = 'emma@sincuru.com'
   # Set domain for emails
   ActionMailer::Base.default_url_options[:host] = config.site_url
 end
 
 
+
+
 Spree.user_class = "Spree::LegacyUser"
+
+Spree::Config.class_eval do 
+  preference :admin_email, :string, :default => 'admin@localhost'
+end
