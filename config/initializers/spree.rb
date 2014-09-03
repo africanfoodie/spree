@@ -6,8 +6,8 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-  config.override_actionmailer_config = false
-  config.mails_from = "emma@sincuru.com"
+  # config.override_actionmailer_config = false
+  # config.mails_from = "emma@sincuru.com"
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
