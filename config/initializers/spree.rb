@@ -8,7 +8,7 @@
 
 Spree.config do |config|
   # config.override_actionmailer_config = false
-  config.override_actionmailer_config = true
+  # config.override_actionmailer_config = true
   config.mails_from = 'emma@sincuru.com'
   # Set domain for emails
   ActionMailer::Base.default_url_options[:host] = config.site_url
